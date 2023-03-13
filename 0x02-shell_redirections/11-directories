@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d | wc -l
+echo "Directories: $(find . -mindepth 1 -type d -printf '.' | wc -c)"; echo "Subdirectories: $(find . -mindepth 1 -type l,d -printf '.' | wc -c)"
