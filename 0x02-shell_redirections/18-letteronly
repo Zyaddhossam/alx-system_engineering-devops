@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '/^[a-zA-Z]/' /etc/ssh/sshd_config > output.txt
+sed -n '/^[a-zA-Z]/p' /etc/ssh/sshd_config
