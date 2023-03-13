@@ -1,2 +1,2 @@
 #!/bin/bash
-read -p "Enter a string: " input_string && echo $input_string | tr -d 'cC'
+grep -oE '[^cC]*' <<< "$input_string" | tr -d '\n'
