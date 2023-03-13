@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -oE '[^cC]*' <<< "$input_string" | tr -d '\n'
+tr -d "Cc"
